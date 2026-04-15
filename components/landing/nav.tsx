@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Wordmark } from "./wordmark"
 import { CHECKOUT_URL, PRICE_NOW } from "./config"
 import { cn } from "@/lib/utils"
 
@@ -27,7 +27,14 @@ export function Nav() {
     >
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" aria-label="Fuerte y Claro — inicio">
-          <Wordmark />
+          <Image
+            src="/images/logo-fuerte-claro.png"
+            alt="Fuerte y Claro Marketing"
+            width={140}
+            height={50}
+            className="h-10 w-auto"
+            priority
+          />
         </a>
 
         <div className="flex items-center gap-2">
