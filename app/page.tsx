@@ -1,19 +1,45 @@
-import { Button } from "@/components/ui/button"
+import { Nav } from "@/components/landing/nav"
+import { Countdown } from "@/components/landing/countdown"
+import { Hero } from "@/components/landing/hero"
+import { Problem } from "@/components/landing/problem"
+import { Agitation } from "@/components/landing/agitation"
+import { BeliefShift } from "@/components/landing/belief-shift"
+import { Solution } from "@/components/landing/solution"
+import { Visualization } from "@/components/landing/visualization"
+import { Method } from "@/components/landing/method"
+import { Proof } from "@/components/landing/proof"
+import { Demo } from "@/components/landing/demo"
+import { Modules } from "@/components/landing/modules"
+import { Bonuses } from "@/components/landing/bonuses"
+import { Offer } from "@/components/landing/offer"
+import { Guarantee } from "@/components/landing/guarantee"
+import { Urgency } from "@/components/landing/urgency"
+import { Faq } from "@/components/landing/faq"
+import { FinalCta } from "@/components/landing/final-cta"
+import { Footer } from "@/components/landing/footer"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <main className="bg-brand-beige text-brand-gris">
+      <Nav />
+      <Countdown />
+      <Hero />
+      <Problem />
+      <Agitation />
+      <BeliefShift />
+      <Solution />
+      <Visualization />
+      <Method />
+      <Proof />
+      <Demo />
+      <Modules />
+      <Bonuses />
+      <Offer />
+      <Guarantee />
+      <Urgency />
+      <Faq />
+      <FinalCta />
+      <Footer />
+    </main>
   )
 }

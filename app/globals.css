@@ -38,6 +38,16 @@
     --color-card: var(--card);
     --color-foreground: var(--foreground);
     --color-background: var(--background);
+    --color-brand-beige: var(--brand-beige);
+    --color-brand-rosa: var(--brand-rosa);
+    --color-brand-fucsia: var(--brand-fucsia);
+    --color-brand-fucsia-soft: var(--brand-fucsia-soft);
+    --color-brand-lima: var(--brand-lima);
+    --color-brand-lima-soft: var(--brand-lima-soft);
+    --color-brand-azul: var(--brand-azul);
+    --color-brand-cafe: var(--brand-cafe);
+    --color-brand-gris: var(--brand-gris);
+    --color-brand-crema: var(--brand-crema);
     --radius-sm: calc(var(--radius) * 0.6);
     --radius-md: calc(var(--radius) * 0.8);
     --radius-lg: var(--radius);
@@ -48,82 +58,192 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
+    --brand-beige: oklch(0.96 0.015 80);
+    --brand-rosa: oklch(0.93 0.035 15);
+    --brand-fucsia: oklch(0.62 0.22 340);
+    --brand-fucsia-soft: oklch(0.92 0.06 340);
+    --brand-lima: oklch(0.88 0.18 130);
+    --brand-lima-soft: oklch(0.95 0.08 130);
+    --brand-azul: oklch(0.9 0.04 230);
+    --brand-cafe: oklch(0.32 0.025 40);
+    --brand-gris: oklch(0.22 0 0);
+    --brand-crema: oklch(0.985 0.008 85);
+
+    --background: var(--brand-beige);
+    --foreground: var(--brand-gris);
+    --card: var(--brand-crema);
+    --card-foreground: var(--brand-gris);
+    --popover: var(--brand-crema);
+    --popover-foreground: var(--brand-gris);
+    --primary: var(--brand-fucsia);
+    --primary-foreground: oklch(0.99 0 0);
+    --secondary: var(--brand-rosa);
+    --secondary-foreground: var(--brand-gris);
+    --muted: oklch(0.94 0.01 80);
+    --muted-foreground: oklch(0.45 0.015 40);
+    --accent: var(--brand-lima-soft);
+    --accent-foreground: var(--brand-gris);
     --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --border: oklch(0.88 0.015 60);
+    --input: oklch(0.92 0.01 60);
+    --ring: var(--brand-fucsia);
+    --chart-1: var(--brand-fucsia);
+    --chart-2: var(--brand-lima);
+    --chart-3: var(--brand-azul);
+    --chart-4: var(--brand-cafe);
+    --chart-5: var(--brand-rosa);
+    --radius: 0.75rem;
+    --sidebar: var(--brand-crema);
+    --sidebar-foreground: var(--brand-gris);
+    --sidebar-primary: var(--brand-fucsia);
+    --sidebar-primary-foreground: oklch(0.99 0 0);
+    --sidebar-accent: var(--brand-rosa);
+    --sidebar-accent-foreground: var(--brand-gris);
+    --sidebar-border: oklch(0.88 0.015 60);
+    --sidebar-ring: var(--brand-fucsia);
 }
 
 .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
+    --brand-beige: oklch(0.18 0.01 60);
+    --brand-rosa: oklch(0.32 0.04 15);
+    --brand-fucsia: oklch(0.7 0.22 340);
+    --brand-fucsia-soft: oklch(0.35 0.1 340);
+    --brand-lima: oklch(0.85 0.18 130);
+    --brand-lima-soft: oklch(0.32 0.08 130);
+    --brand-azul: oklch(0.32 0.04 230);
+    --brand-cafe: oklch(0.85 0.02 40);
+    --brand-gris: oklch(0.96 0 0);
+    --brand-crema: oklch(0.22 0.005 60);
+
+    --background: var(--brand-beige);
+    --foreground: var(--brand-gris);
+    --card: var(--brand-crema);
+    --card-foreground: var(--brand-gris);
+    --popover: var(--brand-crema);
+    --popover-foreground: var(--brand-gris);
+    --primary: var(--brand-fucsia);
+    --primary-foreground: oklch(0.15 0 0);
+    --secondary: var(--brand-rosa);
+    --secondary-foreground: var(--brand-gris);
+    --muted: oklch(0.25 0.01 60);
+    --muted-foreground: oklch(0.7 0.01 40);
+    --accent: var(--brand-lima-soft);
+    --accent-foreground: var(--brand-gris);
     --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
+    --border: oklch(1 0 0 / 12%);
     --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+    --ring: var(--brand-fucsia);
+    --chart-1: var(--brand-fucsia);
+    --chart-2: var(--brand-lima);
+    --chart-3: var(--brand-azul);
+    --chart-4: var(--brand-cafe);
+    --chart-5: var(--brand-rosa);
+    --sidebar: var(--brand-crema);
+    --sidebar-foreground: var(--brand-gris);
+    --sidebar-primary: var(--brand-fucsia);
+    --sidebar-primary-foreground: oklch(0.15 0 0);
+    --sidebar-accent: var(--brand-rosa);
+    --sidebar-accent-foreground: var(--brand-gris);
+    --sidebar-border: oklch(1 0 0 / 12%);
+    --sidebar-ring: var(--brand-fucsia);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
   body {
     @apply bg-background text-foreground;
-    }
+    font-feature-settings: "ss01", "cv11";
+  }
   html {
     @apply font-sans;
-    }
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: var(--brand-fucsia);
+    color: white;
+  }
+}
+
+@keyframes fyc-confetti-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--fyc-drift, 0px), 110vh, 0) rotate(var(--fyc-spin, 720deg));
+    opacity: 0;
+  }
+}
+
+@keyframes fyc-pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fyc-rise {
+  0% {
+    transform: translate3d(0, 14px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fyc-pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.fyc-confetti-piece {
+  position: absolute;
+  top: -5vh;
+  width: 10px;
+  height: 14px;
+  border-radius: 2px;
+  animation: fyc-confetti-fall var(--fyc-duration, 3.4s) cubic-bezier(0.18, 0.6, 0.4, 1) forwards;
+  animation-delay: var(--fyc-delay, 0s);
+  will-change: transform, opacity;
+}
+
+.fyc-pop {
+  animation: fyc-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.fyc-rise {
+  animation: fyc-rise 0.6s ease-out both;
+}
+
+.fyc-pulse-ring {
+  animation: fyc-pulse-ring 1.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fyc-confetti-piece,
+  .fyc-pop,
+  .fyc-rise,
+  .fyc-pulse-ring {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
