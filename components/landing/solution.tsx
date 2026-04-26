@@ -29,11 +29,11 @@ export function Solution() {
             La solución
           </span>
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-brand-gris sm:text-4xl">
-            Te presentamos <span className="text-brand-fucsia">Fuerte y Claro</span>: el curso que te lleva de invisible a referente en{" "}
-            <span className="text-brand-fucsia">30 días</span>.
+            Construye tu Marca Personal desde Cero y Posiciónate Digitalmente en{" "}
+            <span className="text-brand-fucsia">30 días</span>
           </h2>
           <p className="mt-5 text-balance text-base text-brand-cafe sm:text-lg">
-            Un sistema estructurado, 100% práctico, diseñado para empezar a aplicar desde el día 1 — aunque empieces sin seguidores, sin contenido y sin saber qué decir.
+            El curso que te lleva de invisible a referente en 30 días.
           </p>
         </div>
 
