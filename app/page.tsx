@@ -8,7 +8,7 @@ import { Solution } from "@/components/landing/solution"
 import { Visualization } from "@/components/landing/visualization"
 import { Method } from "@/components/landing/method"
 import { Proof } from "@/components/landing/proof"
-import { Demo } from "@/components/landing/demo"
+
 import { Modules } from "@/components/landing/modules"
 import { Bonuses } from "@/components/landing/bonuses"
 import { Offer } from "@/components/landing/offer"
@@ -31,7 +31,6 @@ export default function Page() {
       <Visualization />
       <Method />
       <Proof />
-      <Demo />
       <Modules />
       <Bonuses />
       <Offer />

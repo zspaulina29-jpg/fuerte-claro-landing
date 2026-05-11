@@ -25,12 +25,12 @@ export function Hero() {
           </span>
 
           <h1 className="text-balance text-4xl leading-[1.05] font-semibold tracking-tight text-brand-gris sm:text-5xl lg:text-6xl">
-            Construye tu marca personal desde cero y{" "}
-            <span className="text-brand-fucsia">posiciónate</span> en tu sector en 30 días.
+            Construye tu marca personal desde cero y conviértete en{" "}
+            <span className="text-brand-fucsia">referente</span> en tu sector en 30 días
           </h1>
 
           <p className="max-w-xl text-balance text-lg text-brand-cafe sm:text-xl">
-            Claridad, mensaje, contenido y visibilidad. Un sistema paso a paso para dejar de ser invisible y convertirte en la opción clara de tu mercado — sin improvisar, sin teoría de relleno.
+            Aprende a comunicar tu valor, crear contenido estratégico y posicionarte para atraer clientes de forma natural.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -38,7 +38,7 @@ export function Hero() {
               asChild
               className="h-12 px-6 text-base font-semibold shadow-md shadow-brand-fucsia/20"
             >
-              <a href={CHECKOUT_URL}>Quiero posicionarme · {PRICE_NOW}</a>
+              <a href={CHECKOUT_URL}>Quiero construir mi marca personal · {PRICE_NOW}</a>
             </Button>
             <p className="text-sm text-brand-cafe/80">
               <span className="line-through opacity-60">Antes {PRICE_BEFORE}</span>
